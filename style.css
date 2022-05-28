@@ -7,37 +7,42 @@
 body {
     background-color: #DA291C;
     font-family:'Open Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 main{
     display: grid;
     place-items: center;
     padding: 3rem;
-    max-width: 675px;
-    margin: 0 auto;
    
 }
 h1 {
     text-transform: capitalize;
     color: #fff;
     text-align: center;
+    padding: 0 3rem;
 }
 p {
     color: #fff;
     font-size: 1.5rem;
-    padding: 1.5rem 0;
     text-align: center;
+    padding: 1rem 3rem;
+    max-width: 700px;
 }
 .logo {
     margin: 2rem 0;
 }
 .timer-format {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     align-items: center;
+    gap: 1rem;
     justify-content: space-between;
 }
 .timer {
     background-color: #fff;
-    margin: 0 1rem;
     text-align: center;
     text-transform: uppercase;
     padding: 1rem;
@@ -49,3 +54,4 @@ p {
     padding-bottom: 10px;
     font-size: 2rem;
 }
+
